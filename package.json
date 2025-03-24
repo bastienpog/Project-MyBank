@@ -11,6 +11,8 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@mantine/core": "^7.17.2",
+    "@mantine/hooks": "^7.17.2",
     "@tailwindcss/vite": "^4.0.8",
     "@types/node": "^22.13.5",
     "lucide-react": "^0.483.0",
