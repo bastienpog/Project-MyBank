@@ -23,8 +23,8 @@ export const Expense: React.FC = () => {
   return (
     <>
       <div>
-        <h2 className="text-3xl text-pink-300 font-semibold m-8">Add your expense</h2>
-        <div className="flex ml-8 space-x-8">
+        <h2 className="text-3xl text-pink-500 font-semibold m-8">Add your expense</h2>
+        <div className="flex ml-8 space-x-8 text-pink-500">
           <NumberInput
             label="Expense"
             placeholder="Dollars"
@@ -47,7 +47,7 @@ export const Expense: React.FC = () => {
             value={categories}
             onChange={setCategories}
           />
-          <Button variant="filled" color="#fda5d5" className="mt-6" onClick={SaveData}>
+          <Button variant="filled" color="#f6339a" className="mt-6" onClick={SaveData}>
             Button
           </Button>
         </div>

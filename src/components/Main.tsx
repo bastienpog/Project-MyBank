@@ -1,22 +1,26 @@
 import { Button, Card } from "@mantine/core";
 import { PiggyBank } from "lucide-react";
+import { Link } from "react-router-dom";
 import React from "react";
 
 export const Main: React.FC = () => {
   return (
     <>
-      <div className="min-h-screen bg-pink-50 flex flex-col px-6 py-6">
+      <div className="flex flex-col px-6 py-6">
         <div className="flex items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl text-pink-500">Votre Partenaire Financier Digital</h1>
+            <h1 className="text-4xl text-pink-500">Feed Your Piggy, Watch It Grow!</h1>
             <p className="text-gray-500 text-lg">
-              MyPiggyBank révolutionne votre expérience bancaire avec des solutions simples,
-              sécurisées et innovantes.
+              Remember the joy of dropping coins into your piggy bank, watching it fill up, and
+              dreaming about what you’d do with your savings? MyPiggyBank brings that same
+              excitement into the digital world—only smarter, safer, and more rewarding!
             </p>
             <div className="space-x-6">
-              <Button color="#f6339a" size="lg">
-                Start fattening the pig
-              </Button>
+              <Link to={"/expense"}>
+                <Button color="#f6339a" size="lg">
+                  Start fattening the pig
+                </Button>
+              </Link>
               <Button variant="outline" color="#f6339a" size="lg">
                 Learn more ...
               </Button>
