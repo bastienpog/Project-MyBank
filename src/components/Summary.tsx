@@ -9,8 +9,12 @@ export const Summary: React.FC = () => {
 
     while (i--) {
       if (!isNaN(Number(keys[i]))) {
-        const parseItem = JSON.parse(localStorage.getItem(keys[i]));
-        values.push(parseItem);
+        const test = localStorage.getItem(keys[i])
+        if (test != null) {
+          const parseItem = JSON.parse(test);
+          values.push(parseItem);
+        }
+
       }
     }
     return values;
