@@ -27,7 +27,7 @@ export const Summary: React.FC = () => {
   return (
     <>
       <h2 className="text-3xl text-pink-500 font-semibold my-8 ml-8">Your summary</h2>
-      <Table className="text-pink-500 xl:m-8">
+      <Table className="text-pink-500">
         <Table.Thead>
           <Table.Tr>
             <Table.Th>Amount</Table.Th>
