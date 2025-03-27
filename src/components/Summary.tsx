@@ -16,11 +16,10 @@ export const Summary: React.FC = () => {
     return values;
   }
   const items = allStorage();
-  console.log(items);
   const rows = items.map((item, index) => (
     <Table.Tr key={index}>
-      <Table.Td>{item.description}</Table.Td>
       <Table.Td>{item.dollars}</Table.Td>
+      <Table.Td>{item.description}</Table.Td>
       <Table.Td>{item.categories}</Table.Td>
     </Table.Tr>
   ));
@@ -31,8 +30,8 @@ export const Summary: React.FC = () => {
       <Table className="text-pink-500 m-8">
         <Table.Thead>
           <Table.Tr>
-            <Table.Th>Description</Table.Th>
             <Table.Th>Amount</Table.Th>
+            <Table.Th>Description</Table.Th>
             <Table.Th>Categories</Table.Th>
           </Table.Tr>
         </Table.Thead>

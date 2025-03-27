@@ -12,19 +12,21 @@ export const Expense: React.FC = () => {
       alert("Please complete all fields in the form.");
       return null;
     }
-    localStorage.setItem(`${count}`, JSON.stringify({ dollars, description, categories }));
+    const newCount = count + 1;
+    localStorage.setItem(`${newCount}`, JSON.stringify({ dollars, description, categories }));
+    localStorage.setItem("count", JSON.stringify(newCount));
     setCount(count + 1);
-    localStorage.setItem("count", JSON.stringify(count));
     setDollars("");
     setDescription("");
     setCategories([]);
+    window.location.reload();
   };
 
   return (
     <>
       <div>
         <h2 className="text-3xl text-pink-500 font-semibold m-8">Add your expense</h2>
-        <div className="flex ml-8 space-x-8 text-pink-500">
+        <div className="flex flex-col ml-8 space-x-8 text-pink-500 xl:flex-row">
           <NumberInput
             label="Expense"
             placeholder="Dollars"
