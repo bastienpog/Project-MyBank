@@ -9,15 +9,15 @@ export const Main: React.FC = () => {
       <div className="flex flex-col px-6 py-6">
         <div className="flex items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl text-pink-500">Feed Your Piggy, Watch It Grow!</h1>
+            <h1 className="text-2xl xl:text-4xl text-pink-500">Feed Your Piggy, Watch It Grow!</h1>
             <p className="text-gray-500 text-lg">
               Remember the joy of dropping coins into your piggy bank, watching it fill up, and
               dreaming about what you’d do with your savings? MyPiggyBank brings that same
               excitement into the digital world—only smarter, safer, and more rewarding!
             </p>
-            <div className="space-x-6">
+            <div className="xl:space-x-6">
               <Link to={"/expense"}>
-                <Button color="#f6339a" size="lg">
+                <Button color="#f6339a" size="lg" className="mb-2 xl:mb-0">
                   Start fattening the pig
                 </Button>
               </Link>
@@ -27,12 +27,12 @@ export const Main: React.FC = () => {
             </div>
           </div>
 
-          <div className="xl:mx-32">
-            <PiggyBank color="#f6339a" size={300} />
+          <div className="xl:mx-32 hidden xl:block">
+            <PiggyBank color="#f6339a" className="xl:size-64 size-32" />
           </div>
         </div>
 
-        <div className="flex space-x-6 mt-12">
+        <div className="flex flex-col space-y-4 mt-12 xl:space-x-6 xl:flex-row xl:space-y-0 ">
           <Card shadow="sm" padding="lg" radius="md" className="bg-white text-center items-center">
             <PiggyBank size={50} className="text-pink-500 mb-4" />
             <h2 className="mb-2 text-pink-500"> Every Coin Counts!</h2>

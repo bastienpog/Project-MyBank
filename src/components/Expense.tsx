@@ -49,7 +49,7 @@ export const Expense: React.FC = () => {
             value={categories}
             onChange={setCategories}
           />
-          <Button variant="filled" color="#f6339a" className="mt-6" onClick={SaveData}>
+          <Button variant="filled" color="#f6339a" className="mt-6 mr-8" onClick={SaveData}>
             Button
           </Button>
         </div>
