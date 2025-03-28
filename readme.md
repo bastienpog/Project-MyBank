@@ -2,6 +2,16 @@
 
 A simple banking app that allows users to manage their expenses. Built with modern tools and technologies, this app helps users track their finances, and all data is stored locally in the browser's local storage.
 
+## Project Objective
+
+The goal of this project is to:
+
+- Use Git and GitHub for version control.
+
+- Learn Docker to containerize a React (frontend) application.
+
+- Set up a complete project workflow: development, versioning, and containerization.
+
 ## Technologies Used
 
 - **Vite** - A fast build tool for modern web development.
@@ -11,6 +21,7 @@ A simple banking app that allows users to manage their expenses. Built with mode
 - **Mantine** - A component library for UI elements.
 - **React Router DOM** - A routing library for React to handle navigation and URLs.
 - **Docker** - Containerized environment for easy deployment.
+- **Vitest** - A blazing-fast unit testing framework for Vite projects.
 
 ## Features
 
